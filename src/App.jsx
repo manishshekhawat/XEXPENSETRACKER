@@ -138,7 +138,7 @@ function App() {
       <h1 className="text-3xl font-semibold ml-9 mt-5 text-white">
         Expense Tracker
       </h1>
-      <div className=" flex justify-center items-center gap-5 m-9 bg-zinc-500 w-300 h-80 text-white rounded-xl">
+      <div className=" flex flex-wrap justify-center items-center gap-5 m-9 bg-zinc-500 w-300 h-80 text-white rounded-xl">
         <WalletBalance balance={balance} onAddWalletMoney={handleIncomeForm} />
         <ExpenseCard expenses={expenses} onAddExpense={handleExpenseForm} />
 

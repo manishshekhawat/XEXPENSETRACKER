@@ -19,7 +19,7 @@ export const IncomeForm = ({
         <h1 className="text-xl font-semibold">Add Balance</h1>
         <form onSubmit={handleSubmit}  className="flex justify-start items-center gap-3">
           <input
-            type="text"
+            type="number"
             placeholder="Income Amount"
             className="w-40 h-10 bg-white rounded-xl p-2"
             onChange={(e) => {
