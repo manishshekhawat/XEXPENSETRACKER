@@ -6,7 +6,7 @@ import ExpenseList from "./components/expenses/ExpenseList";
 import ExpensePieChart from "./components/expenses/ExpensePieChart";
 import TopExpensesBarChart from "./components/expenses/TopExpensesBarChart";
 import IncomeForm from "./components/IncomeForm";
-import WalletBalance from "./components/walletBalance/WalletBalance";
+import WalletBalance from "./components/WalletBalance/WalletBalance";
 
 function App() {
   const [balance, setBalance] = useState(0);
