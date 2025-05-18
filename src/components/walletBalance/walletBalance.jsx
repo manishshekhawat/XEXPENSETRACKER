@@ -1,18 +1,24 @@
+import React from "react";
 
-
-export const WalletBalance=({balance,onAddWalletMoney})=>{
-
-
-    return(
-        <>
-            <div className="w-90 h-60 bg-zinc-300 flex flex-col justify-center items-center gap-4 rounded-xl text-center">
-                // In WalletBalance.js
-<h1 className="text-2xl font-bold" data-testid="wallet-balance">
-  Wallet Balance: <span className="text-green-500">₹{parseFloat(balance).toFixed(0) || 0}</span>
-</h1>
-
-                <button type="button" className="bg-green-700 h-10 w-35 hover:bg-green-400 hover:cursor-pointer text-white p-2 rounded-xl" onClick={onAddWalletMoney}>+ Add Income</button>
-            </div>
-        </>
-    )
+function WalletBalance({ balance, onAddExpense }) {
+  return (
+    <div className="flex-1 bg-zinc-300 h-[200px] p-5 rounded-lg flex flex-col justify-center items-center gap-5 min-w-[250px]">
+      <p className="text-2xl font-bold">
+        Wallet Balance:{" "}
+        <span className=" text-green-700">
+          {" "}
+          ₹ {balance|| 0}
+        </span>
+      </p>
+      <button
+        type="button"
+        className="bg-green-500 hover:bg-green-700 hover:cursor-pointer text-white p-2 rounded"
+        onClick={onAddExpense}
+      >
+        + Add Income
+      </button>
+    </div>
+  );
 }
+
+export default WalletBalance;

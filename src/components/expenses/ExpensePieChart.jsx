@@ -1,4 +1,3 @@
-
 import React from "react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
@@ -18,7 +17,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   );
 };
 
-export const ExpensePieChart = ({ expenseList }) => {
+const ExpensePieChart = ({ expenseList }) => {
   // Group expenses by category and calculate totals
   const categoryTotals = expenseList.reduce((acc, item) => {
     if (!acc[item.category]) acc[item.category] = 0;
@@ -33,7 +32,7 @@ export const ExpensePieChart = ({ expenseList }) => {
 
   return (
     <div className="bg-zinc-500 rounded-xl p-6 w-full md:w-[300px] flex flex-col items-center justify-center">
-      <ResponsiveContainer width="100%" height={200}>
+      <ResponsiveContainer width="100%" height={250}>
         <PieChart>
           <Pie
             data={data}
@@ -66,3 +65,4 @@ export const ExpensePieChart = ({ expenseList }) => {
   );
 };
 
+export default ExpensePieChart;

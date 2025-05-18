@@ -12,7 +12,7 @@ import {
 const CATEGORY_LABELS = ["Food", "Entertainment", "Travel"];
 const COLORS = ["#A020F0", "#FFA500", "#FFD700"];
 
-export const TopExpensesBarChart = ({ expenseList }) => {
+const TopExpensesBarChart = ({ expenseList }) => {
   // Aggregate totals per category
   const categoryTotals = expenseList.reduce((acc, item) => {
     if (!acc[item.category]) acc[item.category] = 0;
@@ -49,3 +49,4 @@ export const TopExpensesBarChart = ({ expenseList }) => {
   );
 };
 
+export default TopExpensesBarChart;

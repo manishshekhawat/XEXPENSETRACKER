@@ -19,7 +19,7 @@ function getCategoryIcon(category) {
 }
 
 
-export function ExpenseList({ expenseList, handleExpenseForm, handleDeleteExpense }) {
+function ExpenseList({ expenseList, handleExpenseForm, handleDeleteExpense }) {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
 
@@ -108,4 +108,4 @@ export function ExpenseList({ expenseList, handleExpenseForm, handleDeleteExpens
   );
 }
 
-
+export default ExpenseList;
