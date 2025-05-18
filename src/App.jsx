@@ -135,7 +135,7 @@ function App() {
 
   return (
     <div>
-      <h1 className="text-3xl font-semibold ml-9 mt-5 text-white">
+      <h1 className="text-3xl font-semibold ml-9 mt-5 text-white" data-testid="main-header">
         Expense Tracker
       </h1>
       <div className=" flex flex-wrap justify-center items-center gap-5 m-9 bg-zinc-500 w-300 h-80 text-white rounded-xl">
