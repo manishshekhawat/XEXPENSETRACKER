@@ -24,7 +24,7 @@ export const ExpenseCard = ({ expenses, onAddExpense }) => {
     <>
       <div className="w-90 h-60 bg-zinc-300 flex flex-col justify-center items-center gap-4 rounded-xl text-center">
         <h1 className="text-2xl font-bold">
-          Expenses: <span className="text-red-500">₹{parseFloat(totalExpenses).toFixed(2) || 0.0}</span>
+          Expenses: <span className="text-red-500">₹{parseFloat(totalExpenses).toFixed(0) || 0}</span>
         </h1>
         <button
           type="button"
