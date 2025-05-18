@@ -145,15 +145,17 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-800 text-white px-10 py-6">
-      <h1 className="text-5xl font-bold mb-6">Expense Tracker</h1>
+      <header className="mb-6">
+        <h1 className="text-5xl font-bold">Expense Tracker</h1>
+      </header>
 
-      <div className="bg-zinc-500 p-6 rounded-xl mb-8">
+      <section className="bg-zinc-500 p-6 rounded-xl mb-8">
         <div className="flex-wrap gap-6 w-full flex md:flex-row flex-col justify-around items-center">
           <WalletBalance balance={balance} onAddExpense={handleIncomeForm} />
           <ExpenseCard expenses={expenses} onAddExpense={handleExpenseForm} />
           <ExpensePieChart expenseList={expenses} />
         </div>
-      </div>
+      </section>
 
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="flex-1">
