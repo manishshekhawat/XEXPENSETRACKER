@@ -31,7 +31,7 @@ export const ExpenseCard = ({ expenses, onAddExpense }) => {
           className="bg-red-700 h-10 w-35 hover:bg-red-400 hover:cursor-pointer text-white p-2 rounded-xl"
           onClick={() => onAddExpense("Add", {})}
         >
-          + AddExpense
+          + Add Expense
         </button>
       </div>
     </>
