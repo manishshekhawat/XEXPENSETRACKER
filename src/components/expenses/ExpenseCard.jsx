@@ -23,9 +23,9 @@ export const ExpenseCard = ({ expenses, onAddExpense }) => {
   return (
     <>
       <div className="w-90 h-60 bg-zinc-300 flex flex-col justify-center items-center gap-4 rounded-xl text-center">
-        // In ExpenseCard.js (if not already)
+        
 <h1 className="text-2xl font-bold" data-testid="total-expenses">
-  Expenses: ₹{total}
+  Expenses: ₹{totalExpenses}
 </h1>
 
         <button
